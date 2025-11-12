@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  football
+//  YouAreAwesome
 //
 //  Created by Muraliraman on 12/11/25.
 //
@@ -11,10 +11,24 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("What's football to you?")
+                .font(.largeTitle)
+                .fontWeight(.medium)
+                .foregroundStyle(.clear)
+        }
+        HStack{
+            Image(systemName: "figure.american.football")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.blue)
+            Image(systemName: "figure.australian.football")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.indigo)
+            Image(systemName: "figure.indoor.soccer")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.purple)
         }
         .padding()
     }
